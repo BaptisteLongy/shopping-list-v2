@@ -29,6 +29,9 @@ const Query = queryType({
 const Mutation = mutationType({
   definition(t) {
     t.crud.createOneList()
+    t.crud.createOneItem()
+    t.crud.deleteOneItem()
+    t.crud.deleteOneList()
   }
 })
 
