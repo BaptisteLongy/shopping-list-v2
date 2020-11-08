@@ -105,3 +105,7 @@ dist
 
 # DB folder
 dbfile/
+
+# Nexus generated fils
+src/generated
+schema.graphql
