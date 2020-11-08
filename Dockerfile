@@ -4,7 +4,7 @@ WORKDIR /usr/preparation
 ENV NPM_CONFIG_LOGLEVEL warn
 
 # Prisma CLI installation
-RUN npm install -g prisma
+RUN npm install -g @prisma/cli
 
 # Node dependencies / install
 COPY package*.json ./
