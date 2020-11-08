@@ -11,7 +11,9 @@ COPY package*.json ./
 RUN npm install --production
 
 # Prisma model definition / generation
-COPY prisma ./
+ADD prisma/schema.prisma ./prisma/schema.prisma
+ADD prisma/.env.example ./prisma/.env
+
 RUN npx prisma generate
 
 # App builder - final container
