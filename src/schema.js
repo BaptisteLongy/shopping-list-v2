@@ -1,5 +1,5 @@
 const { nexusPrisma } = require('nexus-plugin-prisma')
-const { idArg, makeSchema, objectType, stringArg, queryType, mutationType } = require('@nexus/schema')
+const { idArg, makeSchema, objectType, stringArg, queryType, mutationType } = require('nexus')
 
 const Item = objectType({
   name: 'Item',
