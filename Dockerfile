@@ -9,6 +9,10 @@ RUN npm install pm2@3 -g
 
 WORKDIR /usr/shopping-list
 
+# Database persitency mount point
+RUN mkdir dbfile
+VOLUME /dbfile
+
 COPY pm2-ecosystem.json ./
 
 # Node dependencies / install
