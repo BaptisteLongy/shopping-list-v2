@@ -2,7 +2,7 @@
   "name": "shopping-list",
   "version": "2.0.0",
   "description": "The shopping list microservice for my Family manager App",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
     "dev": "node src/server.js",
     "start": "node src/server.js",
@@ -25,6 +25,7 @@
   "dependencies": {
     "@prisma/client": "^2.14.0",
     "apollo-server": "^2.19.2",
+    "dotenv": "^8.2.0",
     "graphql": "^15.4.0",
     "nexus": "^1.0.0",
     "nexus-plugin-prisma": "^0.28.0"
