@@ -1,6 +1,6 @@
 # App builder - final container
 # Rebuilding the pm2 image for ARM architecture
-FROM arm64v8/node:latest
+FROM arm64v8/node:18-alpine
 # FROM node:current
 ENV NPM_CONFIG_LOGLEVEL warn
 
