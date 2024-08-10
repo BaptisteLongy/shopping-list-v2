@@ -17,7 +17,7 @@ COPY pm2-ecosystem.json ./
 
 # Node dependencies / install
 COPY package*.json ./
-RUN npm install
+RUN npm ci
 
 # Prisma model definition / generation
 ADD prisma/schema.prisma ./prisma/schema.prisma
